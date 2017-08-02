@@ -11,6 +11,7 @@ Multicrypt - A utility to split your Bitcoin seed into shares
 
 .. image:: https://github.com/ronreiter/multicrypt/blob/master/icons/multicrypt.png?raw=true
     :target: https://travis-ci.org/ronreiter/multicrypt
+    :height: 128px
     :alt: Build Status
 
 
