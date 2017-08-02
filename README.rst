@@ -18,10 +18,10 @@ Multicrypt - A utility to split your Bitcoin seed into shares
 Getting started
 ===============
 
+Multicrypt is a utility that uses Shamir's secret sharing scheme to split a deterministic wallet seed into 
+several seeds in such a way that not all seeds are required to recover the seed.
+
 Multicrypt is a Python 3 GUI application written using the Qt library.
-Multicrypt is a utility that uses Shamir's secret sharing scheme 
-to split a deterministic wallet seed into several seeds in such a way 
-that not all seeds are required to recover the seed.
 
 .. image:: https://github.com/ronreiter/multicrypt/blob/master/screenshot.png?raw=true
   
