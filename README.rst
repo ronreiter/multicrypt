@@ -54,4 +54,10 @@ To run multicrypt, create a Python 3 virtualenv, install all requirements, and r
 Creating Binaries
 =================
 
-There is no way to create binaries yet. Please feel free to assist by sending me a pull request. 
+Run the following commands to use pyinstaller and create binaries out of the source code:
+
+::
+
+    pip install -r requirements_build.txt
+    build.sh
+    
