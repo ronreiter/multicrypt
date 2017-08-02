@@ -30,8 +30,8 @@ Usage Instructions
 ==================
 
 1. Open your wallet in Electrum and go to Wallet -> Seed. Copy and paste the seed into this application.
-2. Adjust 'Hashes Required' according to the number of hashes you wish to require in order for you to be able to recover your seed.
-3. Adjust 'Hashes to Generate' according to the number of hashes you wish to distribute.
+2. Adjust 'Shares Required' according to the number of shares you wish to require in order for you to be able to recover your seed.
+3. Adjust 'Shares to Generate' according to the number of shares you wish to distribute.
 4. Click on 'Encrypt'. You may verify that the secret shares are reversible using 'Decrypt'.
 5. Distribute the secret shares to people you trust. Do not store all shares together digitally in one location.
 

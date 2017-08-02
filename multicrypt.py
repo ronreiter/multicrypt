@@ -31,8 +31,8 @@ class App(QMainWindow):
                             "the seed.\n\n"
                             "Instructions:\n"
                             "1. Open your wallet in Electrum and go to Wallet -> Seed. Copy and paste the seed into this application.\n"
-                            "2. Adjust 'Hashes Required' according to the number of hashes you wish to require in order for you to be able to recover your seed.\n"
-                            "3. Adjust 'Hashes to Generate' according to the number of hashes you wish to distribute.\n"
+                            "2. Adjust 'Shares Required' according to the number of shares you wish to require in order for you to be able to recover your seed.\n"
+                            "3. Adjust 'Shares to Generate' according to the number of shares you wish to distribute.\n"
                             "4. Click on 'Encrypt'. You may verify that the secret shares are reversible using 'Decrypt'.\n"
                             "5. Distribute the secret shares to people you trust. Do not store all shares together digitally in one location.\n\n"
                             "Currently only Electrum deterministic wallets are supported.")
@@ -54,17 +54,17 @@ class App(QMainWindow):
 
         layout.addRow(QLabel("Enter Seed"), self.original)
 
-        self.hashes_required = QSpinBox()
-        self.hashes_required.setRange(1, 8)
-        self.hashes_required.setValue(3)
+        self.shares_required = QSpinBox()
+        self.shares_required.setRange(1, 8)
+        self.shares_required.setValue(3)
 
-        self.hashes_to_generate = QSpinBox()
-        self.hashes_to_generate.setRange(1, 8)
-        self.hashes_to_generate.setValue(8)
+        self.shares_to_generate = QSpinBox()
+        self.shares_to_generate.setRange(1, 8)
+        self.shares_to_generate.setValue(8)
 
 
-        layout.addRow(QLabel("Hashes Required"), self.hashes_required)
-        layout.addRow(QLabel("Hashes to Generate"), self.hashes_to_generate)
+        layout.addRow(QLabel("Shares Required"), self.shares_required)
+        layout.addRow(QLabel("Shares to Generate"), self.shares_to_generate)
 
         self.conf_group.setLayout(layout)
 
@@ -84,7 +84,6 @@ class App(QMainWindow):
         self.shares_group.setLayout(shares_layout)
 
         buttons_layout = QHBoxLayout()
-
 
         self.button_enc = QPushButton('Encrypt', self)
         self.button_enc.clicked.connect(self.encrypt)
@@ -124,7 +123,7 @@ class App(QMainWindow):
             QMessageBox.question(self, 'Error', "The seed you entered is invalid.", QMessageBox.Ok, QMessageBox.Ok)
             return
 
-        shares = HexToHexSecretSharer.split_secret(val, self.hashes_required.value(), self.hashes_to_generate.value())
+        shares = HexToHexSecretSharer.split_secret(val, self.shares_required.value(), self.shares_to_generate.value())
 
         for share_no in range(len(shares)):
 
