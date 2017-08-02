@@ -9,7 +9,7 @@ Multicrypt - A utility to split your Bitcoin seed into shares
   Homepage: https://github.com/ronreiter/multicrypt
 
 
-.. image:: https://github.com/ronreiter/multicrypt/icons/multicrypt.png
+.. image:: https://github.com/ronreiter/multicrypt/blob/master/icons/multicrypt.png?raw=true
     :target: https://travis-ci.org/ronreiter/multicrypt
     :alt: Build Status
 
@@ -22,7 +22,7 @@ Multicrypt is a utility that uses Shamir's secret sharing scheme
 to split a deterministic wallet seed into several seeds in such a way 
 that not all seeds are required to recover the seed.
 
-.. image:: https://github.com/ronreiter/multicrypt/screenshot.png
+.. image:: https://github.com/ronreiter/multicrypt/blob/master/screenshot.png?raw=true
   
 
 Usage Instructions
