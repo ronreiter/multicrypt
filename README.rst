@@ -42,6 +42,8 @@ Running the development version
 
 To run multicrypt, create a Python 3 virtualenv, install all requirements, and run multicrypt.py.
 
+::
+
     git clone git://github.com/ronreiter/multicrypt.git
     cd multicrypt
     mkvirtualenv multicrypt -p `which python3`
