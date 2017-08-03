@@ -59,5 +59,7 @@ Run the following commands to use pyinstaller and create binaries out of the sou
 ::
 
     pip install -r requirements_build.txt
-    build.sh
+    ./build.sh
     
+
+Donations are welcome - Bitcoin address: 1PdKc2wAZoGq4kkCQ9Engig9x3TspCeVa8
