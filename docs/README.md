@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+# Multicrypt
 
-You can use the [editor on GitHub](https://github.com/ronreiter/multicrypt.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Multicrypt is a utility that uses Shamir's secret sharing scheme to split a deterministic wallet seed into 
+several seeds in such a way that not all seeds are required to recover the seed.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Multicrypt is a Python 3 GUI application written using the Qt library.
+ 
+![Multicrypt](https://github.com/ronreiter/multicrypt/blob/master/screenshot.png?raw=true "Multicrypt")
 
-### Markdown
+Downloads
+=========
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* Mac Version - [Download](https://github.com/ronreiter/multicrypt/blob/master/dist/Multicrypt-osx-0.0.1.dmg)
+* Windows Version - Unavailable
+* Linux Version - Unavailable
+* Source - Please go to https://github.com/ronreiter/multicrypt for further instructions
 
-```markdown
-Syntax highlighted code block
+Usage Instructions
+==================
 
-# Header 1
-## Header 2
-### Header 3
+1. Open your wallet in Electrum and go to Wallet -> Seed. Copy and paste the seed into this application.
+2. Adjust 'Shares Required' according to the number of shares you wish to require in order for you to be able to recover your seed.
+3. Adjust 'Shares to Generate' according to the number of shares you wish to distribute.
+4. Click on 'Encrypt'. You may verify that the secret shares are reversible using 'Decrypt'.
+5. Distribute the secret shares to people you trust. Do not store all shares together digitally in one location.
 
-- Bulleted
-- List
+Currently only Electrum deterministic wallets are supported.
 
-1. Numbered
-2. List
+Download Electrum from here: https://electrum.org
 
-**Bold** and _Italic_ and `Code` text
+### Support
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ronreiter/multicrypt.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you have any issue with Multicrypt, please open an issue here: https://github.com/ronreiter/multicrypt/issues
