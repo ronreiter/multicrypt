@@ -1,7 +1,7 @@
 # -*- mode: python -*-
 
 block_cipher = None
-
+from multicrypt import __version__
 
 a = Analysis(['multicrypt.py'],
              pathex=['/Users/Ron/Dropbox/Ron/src/multicrypt'],
@@ -31,7 +31,7 @@ coll = COLLECT(exe,
                strip=False,
                upx=True,
                name='Multicrypt')
-#app = BUNDLE(exe,
-#         name='Multicrypt',
-#         icon='icons/multicrypt.icns',
-#         bundle_identifier=None)
+app = BUNDLE(coll,
+         name='Multicrypt.app',
+         icon='icons/multicrypt.icns',
+         bundle_identifier='com.ronreiter.Multicrypt')

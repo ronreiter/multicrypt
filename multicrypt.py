@@ -6,6 +6,8 @@ from secretsharing import HexToHexSecretSharer
 from PyQt5.QtCore import Qt
 from mnemonic import Mnemonic
 
+__version__ = '0.0.1'
+
 class App(QMainWindow):
     def __init__(self):
         super().__init__()
