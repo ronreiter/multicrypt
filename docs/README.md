@@ -13,7 +13,7 @@ Downloads
 * Mac Version - [Multicrypt-osx-0.0.1.dmg](https://github.com/ronreiter/multicrypt/blob/master/dist/Multicrypt-osx-0.0.1.dmg)
 * Windows Version - Unavailable
 * Linux Version - Unavailable
-* Source - Please go to [https://github.com/ronreiter/multicrypt] for further instructions
+* Source - Click [here](https://github.com/ronreiter/multicrypt) for further instructions
 
 Usage Instructions
 ==================
@@ -26,8 +26,8 @@ Usage Instructions
 
 Currently only Electrum deterministic wallets are supported.
 
-Download Electrum from here: [https://electrum.org]
+Download Electrum from here: [https://electrum.org](https://electrum.org)
 
 ### Support
 
-If you have any issue with Multicrypt, please open an issue here: [https://github.com/ronreiter/multicrypt/issues]
+If you have any issue with Multicrypt, please open an issue [here](https://github.com/ronreiter/multicrypt/issues).
