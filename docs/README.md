@@ -1,4 +1,4 @@
-# Multicrypt
+# multicrypt
 
 Multicrypt is a utility that uses Shamir's secret sharing scheme to split a deterministic wallet seed into 
 several seeds in such a way that not all seeds are required to recover the seed.
