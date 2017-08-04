@@ -10,7 +10,7 @@ Multicrypt is a Python 3 GUI application written using the Qt library.
 Downloads
 =========
 
-* Mac Version - [Multicrypt-osx-0.0.1.dmg](https://github.com/ronreiter/multicrypt/blob/master/dist/Multicrypt-osx-0.0.1.dmg)
+* Mac Version - [Multicrypt-osx-0.0.1.dmg](https://github.com/ronreiter/multicrypt/raw/master/dist/Multicrypt-osx-0.0.1.dmg)
 * Windows Version - Unavailable
 * Linux Version - Unavailable
 * Source - Click [here](https://github.com/ronreiter/multicrypt) for further instructions
